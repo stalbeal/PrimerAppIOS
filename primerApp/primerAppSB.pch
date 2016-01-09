@@ -1,0 +1,15 @@
+//
+//  primerAppSB.pch
+//  primerApp
+//
+//  Created by Stephany Berrio on 19/12/15.
+//  Copyright © 2015 Stephany Berrio. All rights reserved.
+//
+
+#ifndef primerAppSB_pch
+#define primerAppSB_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* primerAppSB_pch */
