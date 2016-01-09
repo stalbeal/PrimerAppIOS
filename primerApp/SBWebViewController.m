@@ -8,16 +8,24 @@
 
 #import "SBWebViewController.h"
 
-@interface SBWebViewController ()
-
-@end
 
 @implementation SBWebViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+-(id) initWithModel:(SBWineModel *) aModel{
+    if (self= [super initWithNibName:nil bundle:nil]) {
+        _model=aModel;
+        self.title=@"Web";//seteamos el titulo que aparecera en el tab
+    }
+    return self;
 }
+
+-(void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    [self displayURL:self.model.wineCompanyWeb];
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,4 +42,27 @@
 }
 */
 
+#pragma mark - Utils
+
+-(void) displayURL:(NSURL *) anURL{
+    //le decimos al navegador que el mismo es su delegado
+    self.browser.delegate=self;
+    //ponemos visible el activityViewIndicator
+    self.activityViewIndicator.hidden=NO;
+    //le decimos que inicie la animación
+    [self.activityViewIndicator startAnimating];
+    //le decioms que inicie la url a cargar
+    [self.browser loadRequest:[NSURLRequest requestWithURL:anURL]];
+}
+
+#pragma mark - UIWebViewDelegate
+//metodo para acciones cuando la web finalice de cargar
+-(void) webViewDidFinishLoad:(UIWebView *)webView{
+    //le decimos al indicatod(ruedita q carga) que finalice
+    [self.activityViewIndicator stopAnimating];
+    //ocultamos el activityViewIndicator(ruedita de cargando)
+    [self.activityViewIndicator setHidden:YES];
+    
+    
+}
 @end

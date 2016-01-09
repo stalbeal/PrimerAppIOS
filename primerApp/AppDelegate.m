@@ -7,18 +7,73 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "SBWineModel.h"
+#import  "SBWebViewController.h"
 
-@interface AppDelegate ()
-
-@end
 
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application
+didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    //creamos obajeto del modelo SBWineModel
+    SBWineModel *vinoTinto = [SBWineModel wineWithName:@"Bembibre"
+                                         wineCompanyName:@"Bominio Tares"
+                                                    type:@"Tinto"
+                                                  origin:@"El Bierzo"
+                                          wineCompanyWeb:[NSURL URLWithString:@"https://www.google.com"]
+                                                   notes:@"Este vino muestra toda complejidad y la elegancia Mencia. En fase visual luce un color rojo picota muy cubierto con tonalidades..."
+                                                grapes:@[@"Mencia"]
+                                                rating:5
+                                                   photo:[UIImage imageNamed:@"bembibre.jpg"]];
+    SBWineModel *vino2 = [SBWineModel wineWithName:@"vino 2"
+                                       wineCompanyName:@"Bominio Tares"
+                                                  type:@"Tinto"
+                                                origin:@"El Bierzo"
+                                        wineCompanyWeb:[NSURL URLWithString:@"https://www.google.com"]
+                                                 notes:@"Este vino muestra toda complejidad y la elegancia Mencia. En fase visual luce un color rojo picota muy cubierto con tonalidades..."
+                                                grapes:@[@"Mencia"]
+                                                rating:5
+                                                 photo:[UIImage imageNamed:@"bembibre.jpg"]];
+    SBWineModel *vino3 = [SBWineModel wineWithName:@"vino 3"
+                                       wineCompanyName:@"vino 3 Tares"
+                                                  type:@"Tinto"
+                                                origin:@"El Bierzo"
+                                        wineCompanyWeb:[NSURL URLWithString:@"https://www.google.com"]
+                                                 notes:@"Este vino muestra toda complejidad y la elegancia Mencia. En fase visual luce un color rojo picota muy cubierto con tonalidades..."
+                                                grapes:@[@"Mencia"]
+                                                rating:5
+                                                 photo:[UIImage imageNamed:@"bembibre.jpg"]];
+    
+    //creamos un objeto wineviewcontroller para cada objeto de tipo vino
+    ViewController *wineViewController = [[ViewController alloc] initWithModel:vinoTinto];
+    ViewController *wine2VC =[[ViewController alloc] initWithModel:vino2];
+    ViewController *wine3VC =[[ViewController alloc]initWithModel:vino3];
+    //SBWebViewController *webViewController = [[SBWebViewController alloc] initWithModel:vinoTinto];
+   
+    //Agregando navigation para cada vista, iniciado solo con un controlador
+    UINavigationController *vino1NavViewController=[[UINavigationController alloc]initWithRootViewController:wineViewController];
+    UINavigationController *vino2NavViewController=[[UINavigationController alloc]initWithRootViewController:wine2VC];
+    UINavigationController *vino3NavViewController=[[UINavigationController alloc]initWithRootViewController:wine3VC];
+    
+    //creamos un combinador, que en este caso seran tabs
+    UITabBarController *tabViewController =[[UITabBarController alloc] init];
+    //asignamos los controladores que apareceran en la vista, aparecen en el orden q se ponen
+     tabViewController.viewControllers=@[vino1NavViewController,vino2NavViewController,vino3NavViewController];
+     
+     //le asignamos el controlador raiz, que generalmente es un combinador
+     self.window.rootViewController= tabViewController;
+    
+    //le asignamos el controlador raiz, que generalmente es un combinador
+    self.window.rootViewController= tabViewController;
+    
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.window.backgroundColor = [UIColor orangeColor];
+    //MainViewController *main= [MainViewController new];
+   // self.window.rootViewController=main;
     [self.window makeKeyAndVisible];
     return YES;
 }

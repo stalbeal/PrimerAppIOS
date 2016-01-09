@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		233064061C3DE66E0026A70A /* splitView_score_glass@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 233064051C3DE66E0026A70A /* splitView_score_glass@2x.png */; };
+		233064091C3DE7500026A70A /* bembibre.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 233064081C3DE7500026A70A /* bembibre.jpg */; };
+		2330640D1C3E3AF80026A70A /* SBWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2330640B1C3E3AF80026A70A /* SBWebViewController.m */; };
+		2330640E1C3E3AF80026A70A /* SBWebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2330640C1C3E3AF80026A70A /* SBWebViewController.xib */; };
+		234B87A11C2A3C460078B895 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 234B879F1C2A3C460078B895 /* ViewController.m */; };
+		234B87A21C2A3C460078B895 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234B87A01C2A3C460078B895 /* ViewController.xib */; };
+		23B782881C25E95F002056A1 /* SBWineModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 23B782871C25E95F002056A1 /* SBWineModel.m */; };
 		23BFDAED1BFAAE3200E08577 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BFDAEC1BFAAE3200E08577 /* main.m */; };
 		23BFDAF01BFAAE3200E08577 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 23BFDAEF1BFAAE3200E08577 /* AppDelegate.m */; };
 		23BFDAF21BFAAE3200E08577 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23BFDAF11BFAAE3200E08577 /* Assets.xcassets */; };
@@ -33,6 +40,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		233064051C3DE66E0026A70A /* splitView_score_glass@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "splitView_score_glass@2x.png"; sourceTree = "<group>"; };
+		233064081C3DE7500026A70A /* bembibre.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bembibre.jpg; sourceTree = "<group>"; };
+		2330640A1C3E3AF80026A70A /* SBWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWebViewController.h; sourceTree = "<group>"; };
+		2330640B1C3E3AF80026A70A /* SBWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWebViewController.m; sourceTree = "<group>"; };
+		2330640C1C3E3AF80026A70A /* SBWebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SBWebViewController.xib; sourceTree = "<group>"; };
+		234B879E1C2A3C460078B895 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		234B879F1C2A3C460078B895 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		234B87A01C2A3C460078B895 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		23B782861C25E95F002056A1 /* SBWineModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBWineModel.h; sourceTree = "<group>"; };
+		23B782871C25E95F002056A1 /* SBWineModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SBWineModel.m; sourceTree = "<group>"; };
+		23B782891C25F16C002056A1 /* primerAppSB.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = primerAppSB.pch; sourceTree = "<group>"; };
 		23BFDAE81BFAAE3200E08577 /* primerApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = primerApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23BFDAEC1BFAAE3200E08577 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		23BFDAEE1BFAAE3200E08577 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -73,6 +91,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		233064071C3DE67A0026A70A /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				233064081C3DE7500026A70A /* bembibre.jpg */,
+				233064051C3DE66E0026A70A /* splitView_score_glass@2x.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		234B879D1C2A18BB0078B895 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23B782861C25E95F002056A1 /* SBWineModel.h */,
+				23B782871C25E95F002056A1 /* SBWineModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		234B87A31C2A3C520078B895 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				234B879E1C2A3C460078B895 /* ViewController.h */,
+				234B879F1C2A3C460078B895 /* ViewController.m */,
+				234B87A01C2A3C460078B895 /* ViewController.xib */,
+				2330640A1C3E3AF80026A70A /* SBWebViewController.h */,
+				2330640B1C3E3AF80026A70A /* SBWebViewController.m */,
+				2330640C1C3E3AF80026A70A /* SBWebViewController.xib */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
 		23BFDADF1BFAAE3200E08577 = {
 			isa = PBXGroup;
 			children = (
@@ -96,11 +145,13 @@
 		23BFDAEA1BFAAE3200E08577 /* primerApp */ = {
 			isa = PBXGroup;
 			children = (
+				233064071C3DE67A0026A70A /* resources */,
+				234B87A31C2A3C520078B895 /* Controllers */,
+				234B879D1C2A18BB0078B895 /* Models */,
 				23BFDAEE1BFAAE3200E08577 /* AppDelegate.h */,
 				23BFDAEF1BFAAE3200E08577 /* AppDelegate.m */,
 				23BFDAF11BFAAE3200E08577 /* Assets.xcassets */,
 				23BFDAF31BFAAE3200E08577 /* LaunchScreen.storyboard */,
-				23BFDAF61BFAAE3200E08577 /* Info.plist */,
 				23BFDAEB1BFAAE3200E08577 /* Supporting Files */,
 			);
 			path = primerApp;
@@ -109,7 +160,9 @@
 		23BFDAEB1BFAAE3200E08577 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				23BFDAF61BFAAE3200E08577 /* Info.plist */,
 				23BFDAEC1BFAAE3200E08577 /* main.m */,
+				23B782891C25F16C002056A1 /* primerAppSB.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -236,6 +289,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BFDAF21BFAAE3200E08577 /* Assets.xcassets in Resources */,
+				233064091C3DE7500026A70A /* bembibre.jpg in Resources */,
+				233064061C3DE66E0026A70A /* splitView_score_glass@2x.png in Resources */,
+				234B87A21C2A3C460078B895 /* ViewController.xib in Resources */,
+				2330640E1C3E3AF80026A70A /* SBWebViewController.xib in Resources */,
 				23BFDAF51BFAAE3200E08577 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +319,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				23BFDAF01BFAAE3200E08577 /* AppDelegate.m in Sources */,
+				2330640D1C3E3AF80026A70A /* SBWebViewController.m in Sources */,
+				23B782881C25E95F002056A1 /* SBWineModel.m in Sources */,
 				23BFDAED1BFAAE3200E08577 /* main.m in Sources */,
+				234B87A11C2A3C460078B895 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -335,6 +395,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -377,6 +438,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -395,6 +457,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = primerApp/primerAppSB.pch;
 				INFOPLIST_FILE = primerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.primerApp;
@@ -406,6 +470,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = primerApp/primerAppSB.pch;
 				INFOPLIST_FILE = primerApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.com.primerApp;
@@ -480,6 +546,7 @@
 				23BFDB111BFAAE3200E08577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23BFDB121BFAAE3200E08577 /* Build configuration list for PBXNativeTarget "primerAppTests" */ = {
 			isa = XCConfigurationList;
@@ -488,6 +555,7 @@
 				23BFDB141BFAAE3200E08577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		23BFDB151BFAAE3200E08577 /* Build configuration list for PBXNativeTarget "primerAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +564,7 @@
 				23BFDB171BFAAE3200E08577 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
